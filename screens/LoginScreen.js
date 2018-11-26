@@ -32,7 +32,12 @@ export default class LoginScreen extends React.Component {
           </View>
 
           <View style={styles.getStartedContainer}>            
-            <Text style={styles.getStartedText}>Hola Fupsión</Text>
+            <Text style={styles.getStartedText}>Hola Fupsión - LogIn Screen</Text>
+            
+            <Text onPress={this.props.navigation.toggleDrawer} style={styles.helpLinkText}>
+                  OpenSideBar
+            </Text>
+
           </View>
         </ScrollView>
       </View>
